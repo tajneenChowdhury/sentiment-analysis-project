@@ -1,4 +1,4 @@
-name: Run Prediction
+name: CI
 
 on:
   push:
@@ -35,6 +35,5 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run the formatter script
-        run: |
-          python src/formatter.py --input data/raw_sales_data.csv --output data/cleaned_sales_data.csv
+      - name: Run prediction script
+        run: python src/predict.py "Data Science"
