@@ -33,6 +33,5 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-     
       - name: Run the predict script
         run: python src/predict.py "good"
