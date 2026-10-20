@@ -28,6 +28,9 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Train the model
+        run: python src/train.py
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
