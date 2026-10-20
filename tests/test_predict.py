@@ -1,6 +1,6 @@
 import pytest
-from src.predict import load_model, predict_texts
 
+from src.predict import load_model, predict_texts
 
 MODEL_PATH = "models/sentiment.joblib"
 
