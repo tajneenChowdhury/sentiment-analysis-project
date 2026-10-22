@@ -3,7 +3,9 @@ import pandas as pd
 
 def process_data(df: pd.DataFrame) -> pd.DataFrame:
     """Cleans and processes the dataframe."""
-    print("Starting data processing!")
+    #print("Starting data processing!")
+
+    print(df.head())
 
     # Clean column names by stripping whitespace and converting to lower case
     df.columns = df.columns.str.strip().str.lower()
@@ -23,5 +25,5 @@ if __name__ == "__main__":
     initial_df = pd.DataFrame(data)
 
     cleaned_df = process_data(initial_df)
-    print("Cleaned DataFrame:")
-    print(cleaned_df)
+    #print("Cleaned DataFrame:")
+    #print(cleaned_df)
